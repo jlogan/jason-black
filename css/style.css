@@ -1280,3 +1280,15 @@ button.mobile-menu-btn {
     object-position: center;
 }
 
+/* Font Awesome Icon Styles */
+.three-col-iconbox-icon i,
+.the-foundation-iconbox-icon i {
+    font-size: 48px;
+    color: #B11F29;
+    display: block;
+}
+
+.three-col-iconbox-icon i {
+    color: white;
+}
+
