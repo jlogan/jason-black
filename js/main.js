@@ -160,6 +160,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         errorCount++;
     }
     
+    
     // If there are validation errors, don't submit
     if (errorCount > 0) {
         console.log('Form validation failed with', errorCount, 'errors');
@@ -288,16 +289,16 @@ function submitForm(name, phone, email) {
         body: formData
     })
     .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            // Show success message
-            document.getElementById('success-msg').style.display = 'block';
-            document.getElementById('contactForm').reset();
-        } else {
-            // Show error message
-            showError('email-error', data.message || 'An error occurred. Please try again.');
-        }
-    })
+            .then(data => {
+                if (data.success) {
+                    // Show success message
+                    document.getElementById('success-msg').style.display = 'block';
+                    document.getElementById('contactForm').reset();
+                } else {
+                    // Show error message
+                    showError('email-error', data.message || 'An error occurred. Please try again.');
+                }
+            })
     .catch(error => {
         console.error('Error:', error);
         showError('email-error', 'An error occurred. Please try again.');
