@@ -9,6 +9,6 @@ define('SENDGRID_API_KEY', 'SG.-RDl6Nj7RGuXG3Y4AaCGsA.YKsavr2uqYtA0hR76Nks5QilEg
 // Email Settings
 define('FROM_EMAIL', 'noreply@brogrammersagency.com');
 define('FROM_NAME', 'Brogrammers Agency');
-define('TO_EMAIL', 'nagolpj@gmail.com');
-define('TO_NAME', 'Jay Logan');
+define('TO_EMAIL', 'jason@votejasonblack.org');
+define('TO_NAME', 'Jason Black');
 ?>
