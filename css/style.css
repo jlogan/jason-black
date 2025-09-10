@@ -26,7 +26,7 @@ img{
 
 section.json-banner-section {
     padding: 200px 0 230px;
-    background-image: url("../Media/Banner-bg.png");
+    background-image: url("../images/Banner-bg.png");
     position: relative;
     overflow: hidden;
     background-size: cover;
@@ -296,7 +296,7 @@ h2.json-banner-right-title span {
 }
 
 .why-json-section{
-    background-image: url("../Media/why-json-bg.png");
+    background-image: url("../images/why-json-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -530,7 +530,7 @@ section.the-foundation-section {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../Media/foundation-bg.png");
+    background-image: url("../images/foundation-bg.png");
     position: relative;
 }
 
@@ -824,7 +824,7 @@ a.support-json-senate:hover {
 }
 
 footer{
-    background-image: url("../Media/footer-bg.png");
+    background-image: url("../images/footer-bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -882,7 +882,7 @@ p.copyrights-text {
 .stay-update-section{
     width: 100%;
     padding: 90px 0;
-    background-image: url("../Media/form-bg.png");
+    background-image: url("../images/form-bg.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
