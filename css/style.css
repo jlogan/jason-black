@@ -34,6 +34,11 @@ section.json-banner-section {
     background-repeat: no-repeat;
 }
 
+.three-col-iconbox .three-col-iconbox-row .three-col-iconbox-item .three-col-iconbox-icon i {
+    color: #fff;
+    font-size: 46px;
+}
+
 section.json-banner-section::after {
     content: "";
     position: absolute;
