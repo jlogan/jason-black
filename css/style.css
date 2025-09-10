@@ -26,7 +26,7 @@ img{
 
 section.json-banner-section {
     padding: 200px 0 230px;
-    background-image: url("../images/Banner-bg.png");
+    background-image: url("../Media/Banner-bg.png");
     position: relative;
     overflow: hidden;
     background-size: cover;
@@ -302,7 +302,7 @@ h2.json-banner-right-title span {
 }
 
 .why-json-section{
-    background-image: url("../images/why-json-bg.png");
+    background-image: url("../Media/why-json-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -359,7 +359,7 @@ span.why-json-quote-icon {
 
 .why-josn-row {
     display: flex;
-    gap: 40px;
+    gap: 46px;
     justify-content: center;
     align-items: center;
 }
@@ -408,9 +408,9 @@ h2.why-json-title::after {
     background-size: contain;
 }
 
-.why-json-btn .donate-btn{
-    color: #B11F29;
-    background: #fff;
+.read-more {
+    background-color: #ffffff !important;
+    color: #B11F29 !important;
 }
 
 .why-json-btn .donate-btn:hover{
@@ -536,7 +536,7 @@ section.the-foundation-section {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../images/foundation-bg.png");
+    background-image: url("../Media/foundation-bg.png");
     position: relative;
 }
 
@@ -830,7 +830,7 @@ a.support-json-senate:hover {
 }
 
 footer{
-    background-image: url("../images/footer-bg.png");
+    background-image: url("../Media/footer-bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -888,7 +888,7 @@ p.copyrights-text {
 .stay-update-section{
     width: 100%;
     padding: 90px 0;
-    background-image: url("../images/form-bg.png");
+    background-image: url("../Media/form-bg.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1286,3 +1286,51 @@ button.mobile-menu-btn {
     object-position: center;
 }
 
+.image-section {
+    position: relative;
+        display: flex;
+    justify-content: center;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 915px;
+    padding: 0 20px;
+}
+
+
+.meet-json h2.why-json-title:after {
+    display: none;
+}
+
+
+.meet-json h2.why-json-title {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.meet-json p.why-json-text {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 19px;
+}
+
+.why-json-right.meet-json {
+    justify-content: left !important;
+        align-items: flex-start !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .full-image img {
+        height: 460px;
+    }
+}
+
+
+@media only screen and (max-width: 414px) {
+    .full-image img {
+        height: 630px;
+    }
+}
