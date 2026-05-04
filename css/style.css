@@ -1022,6 +1022,28 @@ div#success-msg {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 16px;
+}
+
+.sms-consent-disclaimer {
+    margin: 0;
+    max-width: 760px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: rgba(0, 0, 0, 0.62);
+    color: #fff !important;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.sms-consent-disclaimer a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 700;
 }
 
 .form-submit button {
@@ -1080,6 +1102,16 @@ div#success-msg {
         flex: none;
         max-width: calc(50% - 6px);
         width: 100%;
+    }
+    .form-submit {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+    .sms-consent-disclaimer {
+        max-width: 100%;
+        font-size: 13px;
+        line-height: 1.45;
     }
     .stay-update-section{
         padding: 60px 0;
