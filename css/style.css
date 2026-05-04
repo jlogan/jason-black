@@ -1353,20 +1353,52 @@ button.mobile-menu-btn {
         align-items: flex-start !important;
 }
 
+.stay-update-section .form-submit {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.stay-update-section .form-submit #submitBtn {
+    align-self: flex-end;
+}
+
 .sms-consent-disclaimer {
-    margin: 0 0 12px;
+    margin: 0;
+    width: 100%;
     color: #fff;
     font-family: Inter, sans-serif;
-    font-size: 12px;
-    line-height: 1.45;
+    font-size: 13px;
+    line-height: 1.5;
+    background: rgba(0, 0, 0, 0.62);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 8px;
+    padding: 12px 14px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .sms-consent-disclaimer a {
-    color: #fff;
+    color: #d8b6ff;
     text-decoration: underline;
+    font-weight: 600;
+}
+
+.sms-consent-disclaimer a:hover {
+    color: #ffffff;
 }
 
 @media only screen and (max-width: 768px) {
+    .stay-update-section .form-submit #submitBtn {
+        align-self: flex-start;
+    }
+
+    .sms-consent-disclaimer {
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+
     .full-image img {
         height: 460px;
     }
