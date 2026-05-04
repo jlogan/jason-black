@@ -1353,6 +1353,19 @@ button.mobile-menu-btn {
         align-items: flex-start !important;
 }
 
+.sms-consent-disclaimer {
+    margin: 0 0 12px;
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+.sms-consent-disclaimer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 768px) {
     .full-image img {
         height: 460px;

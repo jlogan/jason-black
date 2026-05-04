@@ -134,12 +134,8 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         errorCount++;
     }
     
-    // Validate phone
-    if (phone === '') {
-        showError('phone-error', 'Phone number is required');
-        isValid = false;
-        errorCount++;
-    } else if (!isValidPhone(phone)) {
+    // Validate phone (optional)
+    if (phone !== '' && !isValidPhone(phone)) {
         showError('phone-error', 'Please enter a valid phone number (10+ digits)');
         isValid = false;
         errorCount++;
@@ -167,10 +163,10 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         // Focus on first error field
         if (name === '') {
             document.getElementById('name').focus();
-        } else if (phone === '') {
-            document.getElementById('phone').focus();
         } else if (email === '') {
             document.getElementById('email').focus();
+        } else if (phone !== '' && !isValidPhone(phone)) {
+            document.getElementById('phone').focus();
         }
         return false;
     }

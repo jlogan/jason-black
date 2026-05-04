@@ -23,9 +23,9 @@ $name = isset($_POST['name']) ? trim($_POST['name']) : '';
 $phone = isset($_POST['phone']) ? trim($_POST['phone']) : '';
 $email = isset($_POST['email']) ? trim($_POST['email']) : '';
 
-// Validate required fields
-if (empty($name) || empty($phone) || empty($email)) {
-    echo json_encode(['success' => false, 'message' => 'All fields are required']);
+// Validate required fields (phone is optional)
+if (empty($name) || empty($email)) {
+    echo json_encode(['success' => false, 'message' => 'Name and email are required']);
     exit;
 }
 
@@ -35,11 +35,13 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     exit;
 }
 
-// Validate phone number (basic validation)
-$cleanPhone = preg_replace('/[\s\-\(\)]/', '', $phone);
-if (!preg_match('/^[\+]?[1-9][\d]{9,15}$/', $cleanPhone)) {
-    echo json_encode(['success' => false, 'message' => 'Invalid phone number format']);
-    exit;
+// Validate phone number only if provided
+if (!empty($phone)) {
+    $cleanPhone = preg_replace('/[\s\-\(\)]/', '', $phone);
+    if (!preg_match('/^[\+]?[1-9][\d]{9,15}$/', $cleanPhone)) {
+        echo json_encode(['success' => false, 'message' => 'Invalid phone number format']);
+        exit;
+    }
 }
 
 // Sanitize data
