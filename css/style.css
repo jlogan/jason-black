@@ -1394,7 +1394,8 @@ button.mobile-menu-btn {
 }
 
 .stay-update-section .form-submit #submitBtn {
-    align-self: flex-end;
+    align-self: center;
+    min-width: 200px;
 }
 
 .sms-consent-disclaimer {
@@ -1423,7 +1424,7 @@ button.mobile-menu-btn {
 
 @media only screen and (max-width: 768px) {
     .stay-update-section .form-submit #submitBtn {
-        align-self: flex-start;
+        align-self: center;
     }
 
     .sms-consent-disclaimer {
